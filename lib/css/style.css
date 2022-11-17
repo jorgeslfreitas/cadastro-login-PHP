@@ -1,0 +1,207 @@
+/*Sistema*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor0: #dd403a;
+    --cor1: #cc8986;
+    --cor2: #f4f3ee;
+    --cor3: #798086;
+    --cor4: #300099;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/*Classes auxiliares*/
+.float {
+    float: left;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.h40 {
+    height: 40px;
+}
+
+.center {
+    text-align: center;
+}
+
+/*Configurações gerais*/
+
+input[type='text'], input[type='email'], input[type='password'] {
+    margin: 15px 0;
+    border: 1px solid #bbb;
+    border-radius: 2px;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+input[type='submit'] {
+    width: 30%;
+    background: var(--cor0);
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+input[type='submit']:hover {
+    opacity: 0.8;
+}
+
+.fundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../../img/cadastro-login-bg-L.png') center center no-repeat;
+    background-size: cover;
+}
+
+.login {
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 30px;
+}
+
+    .loginTextos {
+        width: 70%;
+        font-weight: bold;
+        line-height: 40px;
+    }
+
+.cadastro {
+    width: 60%;
+    margin: 15px 20%;
+}
+
+.topFaixa {
+    height: 50px;
+    background: var(--cor0);
+    font-weight: bold;
+    color: #fff;
+    line-height: 50px;
+}
+
+.resultadoForm {
+    margin-top: 20px;
+    font-weight: bold;
+    color: red;
+    line-height: 20px;
+}
+
+.retornoCad {
+    margin-top: 20px;
+    font-weight: bold;
+    color: red;
+    line-height: 20px;
+}
+
+.retornoSen {
+    margin-top: 20px;
+    font-weight: bold;
+    color: red;
+    line-height: 20px;
+}
+
+/*Extra-Small*/
+@media screen and (max-width: 480px) {
+    input[type='submit'] {
+        width: 70%;
+    }
+
+    .fundo {
+        background: url('../../img/cadastro-login-bg-XS.png') center center no-repeat;
+        background-size: cover;
+    }
+
+    .login {
+        width: 90%;
+    }
+        .loginTextos{
+            width: 100%;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+    .cadastro {
+        width: 90%; 
+        margin: 15px 5%;
+    }
+    
+}
+
+/*Small*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    input[type='submit'] {
+        width: 40%;
+    }
+
+    .fundo {
+        background: url('../../img/cadastro-login-bg-S.png') center center no-repeat;
+        background-size: cover;
+    }
+
+    .login {
+        width: 60%;
+    }
+        .loginTextos{
+            width: 60%;
+        }
+    .cadastro {
+        width: 80%;
+        margin: 15px 10%;
+    }
+    
+}
+
+/*Medium*/
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+    input[type='submit'] {
+        width: 40%;
+    }
+
+    .fundo {
+        background: url('../../img/cadastro-login-bg-M.png') center center no-repeat;
+        background-size: cover;
+    }
+
+    .login {
+        width: 40%;
+    }
+        .loginTextos{
+            width: 40%;
+        }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

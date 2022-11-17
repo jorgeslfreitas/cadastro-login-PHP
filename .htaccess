@@ -1,0 +1,7 @@
+RewriteEngine On
+Options ALL -Indexes
+
+DirectoryIndex htdocs/cadastro-login/index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
